@@ -1,0 +1,21 @@
+package first.design.pattern.lab;
+class Singleton{
+    private static Singleton obj = new Singleton();
+    private Singleton(){ 
+    }
+    public static Singleton getInstance(){
+        return obj;
+    }
+    public void myName(){
+        System.out.println("My Name is Habibullah");
+    }
+}
+class FirstDesignPatternLab{
+    public static void main(String args[]){
+        Singleton obj;
+        obj = Singleton.getInstance();
+        obj.myName();
+    }
+}
+    
+
